@@ -1,0 +1,16 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    #nacos服务注册和发现的访问地址
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        #Http Server
+        port: 8719
+        #Sentinel DashBoard地址
+        dashboard: localhost:8080

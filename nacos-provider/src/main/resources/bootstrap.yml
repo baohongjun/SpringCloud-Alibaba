@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        #配置文件数据格式
+        file-extension: yaml
+        #name
+        prefix: nacos-provider
+  #当前环境对应的 profile
+  profiles:
+    active: dev
